@@ -1,12 +1,14 @@
 # RAID4UdeAServer
+
 Haciendo uso del conocimiento que se tiene de los RAID's configuramos una maquina que tiene instalado ubuntu server, a su board se conecta una tarjeta RAID que conecta 8 discos de 1Tb, probaremos configuraciones RAID y realizaremos un diseño experimental para verificar su rendimiento
 
+## Primer acercamiento: configuración física
 
-# Primer acercamiento: configuración física
 El día jueves 11-05-23, Kai y Miguel, junto con Danny, realizan la configuración física de la maquina.
 La configuración de ubuntu server estuvo completa, se verificó que se pudiera acceder a ella desde los computadores del LIS
 
-# Segundo acercamiento: estado inicial de la maquina y los discos
+## Segundo acercamiento: estado inicial de la maquina y los discos
+
 El día viernes 12-05-23, Carlos solicita VPN para poder acceder al servidor desde fuera de UdeA. Se gestiona el permiso Con Hernando Silva, el a su vez da instrucción a un monitor para que nos de acceso. El acceso es enviado a los contactos del equipo. Kai verifica que se puede acceder desde afuera.
 
 Desde el LIS, Carlos realiza el chequeo del estado inicial de la maquina, hace instalaciones y planea la forma de realizar el arreglo RAID o los arreglos RAID.
@@ -22,5 +24,4 @@ Desde el LIS, Carlos realiza el chequeo del estado inicial de la maquina, hace i
   El equipo comunicará a sus pares cuando alguno esté utilizando el servidor para evitar generar ruidos en la prueba.
   Antes de cada prueba se tomará la temperatura y se registrará en un archivo csv o xls.
   Considerando datos a recopilar según el benchmark seleccionado.
-  
   
