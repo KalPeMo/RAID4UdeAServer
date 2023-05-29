@@ -16,7 +16,7 @@ Es importante tener en cuenta que el rendimiento de un RAID no solo depende de l
 
 ![Prueba 1](./img/PruebaInicialDD.jpg)
 
-Esta prueba se realizó con el comando `sudo dd if=/dev/zero of=./dd/archivo_salida bs=1M count=256k conv=fdatasync` y se obtuvo un resultado de 1.1 GB/s.
+Esta prueba se realizó con el comando `sudo dd if=/dev/zero of=./dd/archivo_salida bs=1M count=directconv=fdatasync`
 
 ### Prueba 2
 
@@ -55,6 +55,6 @@ sudo dd if=/dev/zero of=./archivo_salida bs=1M count=100
 echo "Pruebas completadas."
 ```
 
-El archivo `scriptDD.sh` se encarga de ejecutar las pruebas con diferentes configuraciones y guardar los resultados en el archivo `resultado.csv` (el cual se crea automáticamente al correr el script).
+El archivo `scriptDD.sh` se encarga de ejecutar las pruebas y guardar los resultados en el archivo `resultado.csv` (el cual se crea automáticamente al correr el script).
 
 Además, en el archivo `archivo_salida` se encuentran los datos que se escriben en el disco duro, los cuales son traidos desde `/dev/zero`. Este archivo también se crea automáticamente al correr el script.
