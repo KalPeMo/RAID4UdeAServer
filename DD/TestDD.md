@@ -21,3 +21,5 @@ Esta prueba se realizó con el comando `dd if=/dev/zero of=/tmp/output.img bs=8k
 ### Prueba 2
 
 ![Prueba 2](./img/PruebaFinalDD.jpg)
+
+Esta prueba se realizó con el ScriptDD.sh, sobre el RAID 0.
