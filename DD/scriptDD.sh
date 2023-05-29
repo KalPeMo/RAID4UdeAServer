@@ -19,5 +19,5 @@ do
         echo "$tamano_bloque, $cantidad_bloques, $tiempo, $temperatura" >> $archivo_salida
     done
 done
- sudo dd if=/dev/zero of=./archivo_salida bs=1M count=100
+sudo dd if=/dev/zero of=./archivo_salida bs=1M count=100
 echo "Pruebas completadas."

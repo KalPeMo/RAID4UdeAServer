@@ -16,10 +16,45 @@ Es importante tener en cuenta que el rendimiento de un RAID no solo depende de l
 
 ![Prueba 1](./img/PruebaInicialDD.jpg)
 
-Esta prueba se realizó con el comando `dd if=/dev/zero of=/tmp/output.img bs=8k count=256k conv=fdatasync` y se obtuvo un resultado de 1.1 GB/s.
+Esta prueba se realizó con el comando `sudo dd if=/dev/zero of=./dd/archivo_salida bs=1M count=256k conv=fdatasync` y se obtuvo un resultado de 1.1 GB/s.
 
 ### Prueba 2
 
 ![Prueba 2](./img/PruebaFinalDD.jpg)
 
-Esta prueba se realizó con el ScriptDD.sh, sobre el RAID 0.
+Esta prueba se realizó con el RAID 0. En uno de los discos duros de 1TB.
+
+Para realizar esta prueba es necesario tener en cuenta los siguientes archivos:
+
+![ArchivosDD](./img/ArchivosNecesariosDD.jpg)
+
+Donde el archivo `scriptDD.sh` contiene el siguiente código:
+
+```bash
+#!/bin/bash
+# Configuración de variables
+archivo_salida="resultado.csv"
+tamanos_bloques=("1M" "2M" "4M")
+cantidades_bloques=("100" "200" "500")
+
+# Encabezado del archivo CSV
+echo "Tamaño Bloque, Cantidad Bloques, Tiempo, Temperatura" > $archivo_salida
+
+# Bucle para ejecutar las pruebas con diferentes configuraciones
+for tamano_bloque in "${tamanos_bloques[@]}"
+do
+    for cantidad_bloques in "${cantidades_bloques[@]}"
+    do
+        tiempo=$(sudo dd if=/dev/zero of=./archivo_salida bs=$tamano_bloque count=$cantidad_bloques 2>&1 | grep "elapsed" | awk '{print $NF}')
+        temperatura=$(sensors | grep "RAID Temperature" | awk '{print $3}')
+        echo "$tamano_bloque, $cantidad_bloques, $tiempo, $temperatura"
+        echo "$tamano_bloque, $cantidad_bloques, $tiempo, $temperatura" >> $archivo_salida
+    done
+done
+sudo dd if=/dev/zero of=./archivo_salida bs=1M count=100
+echo "Pruebas completadas."
+```
+
+El archivo `scriptDD.sh` se encarga de ejecutar las pruebas con diferentes configuraciones y guardar los resultados en el archivo `resultado.csv` (el cual se crea automáticamente al correr el script).
+
+Además, en el archivo `archivo_salida` se encuentran los datos que se escriben en el disco duro, los cuales son traidos desde `/dev/zero`. Este archivo también se crea automáticamente al correr el script.
