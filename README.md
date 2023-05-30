@@ -17,7 +17,8 @@ Se instalan varios programas para hacer benchmark: fio no funcionó, el otro era
 Se instala python para poder crear un script que ejecute el diseño eperimental.
 Se hace benchmark a un disco y funciona.
 Se crea un script para realizar 4 pruebas de benchmark y no funciona. Estamos escribiendo el script.
-  
+El día 16 de mayo se crea por Miguel el Benchmark Bonnie++, para registrar el rendimiento de cada disco de manera automatizada.
+
 Requisitos del script para realizar el benchmark:
 Debido a que estamos generando una automatización y el script corre pero no se conoce el estado de la prueba, es importante mostrar en pantalla el porcentaje de avance o el estado de la prueba, de modo que el script creado dirá en qué prueba va del total de pruebas.
 El equipo comunicará a sus pares cuando alguno esté utilizando el servidor para evitar generar ruidos en la prueba.
