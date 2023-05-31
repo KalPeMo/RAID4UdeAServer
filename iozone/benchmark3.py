@@ -1,3 +1,4 @@
+import subprocess
 import pexpect
 import re
 import sys
@@ -53,12 +54,31 @@ with open(csv_file, mode='a', newline='') as file:
             #output = subprocess.check_output(command, shell=True).decode()
 
             # Ejecutar la prueba de rendimiento utilizando iozone y el disco especificado
-            command = f"iozone -a -i 0 -i 1 -s {file_size} -r {block_size} -I -f {disk}"
-            child = pexpect.spawn(command)
-
+            #command = f"iozone -a -i 0 -i 1 -s {file_size} -r {block_size} -I -f {disk}"
+            #child = pexpect.spawn(command)
             # Esperar a que finalice el proceso y capturar su salida
-            child.expect(pexpect.EOF)
-            output = child.before.decode()
+            #child.expect(pexpect.EOF)
+            #output = child.before.decode()
+
+
+            # Ejecutar la prueba de rendimiento utilizando iozone y el disco especificado
+            #command = f"sudo iozone -a -i 0 -i 1 -s {file_size} -r {block_size} -I -f {disk}"
+            #process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+            #output, _ = process.communicate()
+            #output = output.decode()
+
+            # Ejecutar la prueba de rendimiento utilizando iozone y el disco especificado
+            #command = f"sudo iozone -a -i 0 -i 1 -s {file_size} -r {block_size} -I -f {disk}"
+            #process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+            #output, _ = process.communicate()
+            #output = output.decode()
+
+            # Ejecutar la prueba de rendimiento utilizando iozone y el disco especificado
+            command = f"iozone -a -i 0 -i 1 -s {file_size} -r {block_size} -I -f {disk}"
+            result = subprocess.run(command, shell=True, capture_output=True, text=True)
+
+            # Obtener la salida de la prueba
+            output = result.stdout
 
             # Obtener los resultados de la prueba
             read_speed = None
