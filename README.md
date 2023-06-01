@@ -42,24 +42,23 @@ sudo umount /dev/md0
 
 ```  
 sudo mdadm --stop /dev/md0
-
 ```  
 ## 0's
 
 ```  
 sudo mdadm --zero-superblock /dev/sda
+```  
 
 ```  
 sudo mdadm --zero-superblock /dev/sdb
-
 ```  
 
 ```  
 sudo mdadm --zero-superblock /dev/sdc
+```  
 
 ```  
 sudo mdadm --zero-superblock /dev/sdd
-
 ```  
 
 ## c
@@ -83,27 +82,25 @@ lsblk -o NAME,SIZE,FSTYPE,TYPE,MOUNTPOINT
 
 ```  
 sudo mdadm --create --verbose /dev/md0 --level=0 --raid-devices=2 /dev/sda /dev/sdb
-
 ```  
 ## ch
 
 ```  
 cat /proc/mdstat
-
 ```  
 ## filst
 
 ```  
 sudo mkfs.ext4 -F /dev/md0
-
 ```  
 
+```  
+sudo mount -t ext4 /dev/md0 /mnt/md0
+```  
 ## crea montpoin para tener un nuevo sistema de archivos
 
 ```  
-
 sudo mkdir -p /mnt/md0
-
 ```  
 ## monta fils para tener un nuevo sistema de archivos
 
@@ -120,7 +117,6 @@ df -h -x devtmpfs -x tmpfs
 
 ```  
 sudo mdadm --detail --scan | sudo tee -a /etc/mdadm/mdadm.conf
-
 ```  
 
 ## upt
