@@ -24,4 +24,111 @@ Debido a que estamos generando una automatización y el script corre pero no se 
 El equipo comunicará a sus pares cuando alguno esté utilizando el servidor para evitar generar ruidos en la prueba.
 Antes de cada prueba se tomará la temperatura y se registrará en un archivo csv o xls.
 Considerando datos a recopilar según el benchmark seleccionado.
-  
+
+# Inst
+
+## list
+```
+cat /proc/mdstat
+```  
+
+## desmonte
+
+```  
+sudo umount /dev/md0
+```  
+
+## stop
+
+```  
+sudo mdadm --stop /dev/md0
+
+```  
+## 0's
+
+```  
+sudo mdadm --zero-superblock /dev/sda
+
+```  
+sudo mdadm --zero-superblock /dev/sdb
+
+```  
+
+```  
+sudo mdadm --zero-superblock /dev/sdc
+
+```  
+sudo mdadm --zero-superblock /dev/sdd
+
+```  
+
+## c
+```  
+sudo nano /etc/fstab
+```  
+
+## c
+```  
+sudo nano /etc/mdadm/mdadm.conf
+```  
+
+# 0
+
+## l
+```  
+lsblk -o NAME,SIZE,FSTYPE,TYPE,MOUNTPOINT
+```  
+
+## cr
+
+```  
+sudo mdadm --create --verbose /dev/md0 --level=0 --raid-devices=2 /dev/sda /dev/sdb
+
+```  
+## ch
+
+```  
+cat /proc/mdstat
+
+```  
+## filst
+
+```  
+sudo mkfs.ext4 -F /dev/md0
+
+```  
+
+## crea montpoin para tener un nuevo sistema de archivos
+
+```  
+
+sudo mkdir -p /mnt/md0
+
+```  
+## monta fils para tener un nuevo sistema de archivos
+
+```  
+sudo mount /dev/md0 /mnt/md0
+```  
+
+## revisa espacio espacio disp
+```  
+df -h -x devtmpfs -x tmpfs
+```  
+
+## asegura al boot
+
+```  
+sudo mdadm --detail --scan | sudo tee -a /etc/mdadm/mdadm.conf
+
+```  
+
+## upt
+```  
+sudo update-initramfs -u
+```  
+
+## add mountpoi to /etc
+```  
+echo '/dev/md0 /mnt/md0 ext4 defaults,nofail,discard 0 0' | sudo tee -a /etc/fstab
+```  
