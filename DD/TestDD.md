@@ -71,6 +71,16 @@ Se realizó una prueba sobre el disco H, el cual es un disco de 1TB. Se realizó
 
 Para realizar la prueba, se asigno la variable "of" la cual tenía la ruta del disco H: `of=/mnt/discoh/`
 
+## Prueba 4
+
+Se realizó una prueba sobre sdc y sdd. Se realizó con el RAID 1.
+
+![PruebaRAID1](./img/PruebaRAID1.png)
+
+![PruebaRAID1 2](./img/PruebaRAID1_2.png)
+
+![PruebaRAID1 3](./img/PruebaRAID1_3.png)
+
 ## Dificultades
 
 Al momento de realizar las pruebas, se presentaron las siguientes dificultades:
