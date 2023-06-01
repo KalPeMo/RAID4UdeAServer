@@ -108,5 +108,6 @@ with open(csv_file, mode='a', newline='') as file:
             print(f"Finalizada prueba {current_test} de {total_tests}. Tiempo transcurrido: {elapsed_time}\n")
 
             current_test += 1
+writer.close()
 
 print("Pruebas de rendimiento completadas. Los resultados se han guardado en el archivo CSV.")

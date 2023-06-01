@@ -1,0 +1,11 @@
+1024,4,24651,2930,25490,26613
+file_size,record_size,write,rewrite,read,reread,time_test
+1024,4,34322,41266,30667,27654,0:00:00.299902
+file_size,record_size,write,rewrite,read,reread,time_test
+1024,4,37078,43097,25009,27320,0:00:00.312852
+file_size,record_size,write,rewrite,read,reread,time_test
+1024,4,38325,41872,25885,27627,0:00:00.254533
+file_size,record_size,write,rewrite,read,reread,time_test
+1024,4,39042,44262,24980,29618,0:00:00.293902
+file_size,record_size,write,rewrite,read,reread,time_test
+1024,4,22886,43274,26502,27617,0:00:00.276130
