@@ -58,3 +58,34 @@ echo "Pruebas completadas."
 El archivo `scriptDD.sh` se encarga de ejecutar las pruebas y guardar los resultados en el archivo `resultado.csv` (el cual se crea automáticamente al correr el script).
 
 Además, en el archivo `archivo_salida` se encuentran los datos que se escriben en el disco duro, los cuales son traidos desde `/dev/zero`. Este archivo también se crea automáticamente al correr el script.
+
+## Prueba 3
+
+Se realizó una prueba sobre el disco H, el cual es un disco de 1TB. Se realizó con el RAID 0.
+
+![Prueba DiscoH](./img/PruebaDiscoH.png)
+
+![Prueba DiscoH 2](./img/PruebaDiscoH2.png)
+
+![Prueba DiscoH 3](./img/PruebaDiscoH3.png)
+
+Para realizar la prueba, se asigno la variable "of" la cual tenía la ruta del disco H: `of=/mnt/discoh/`
+
+## Prueba 4
+
+Se realizó una prueba sobre sdc y sdd. Se realizó con el RAID 1.
+
+![PruebaRAID1](./img/PruebaRAID1.png)
+
+![PruebaRAID1 2](./img/PruebaRAID1_2.png)
+
+![PruebaRAID1 3](./img/PruebaRAID1_3.png)
+
+## Dificultades
+
+Al momento de realizar las pruebas, se presentaron las siguientes dificultades:
+
+- El archivo `scriptDD.sh` no se ejecutaba correctamente. Esto se debía a que el archivo no tenía permisos de ejecución. Para solucionar esto, se ejecutó el comando `chmod +x scriptDD.sh` para darle permisos de ejecución al archivo.
+- La carpeta "discoh" no se podría crear, dentro del disco sdh:
+  ![Errores al crear carpeta](./img/ErrorCrearCarpeta.png)
+  Así que se tuvo que usar el comando -t y ext4 para crear la carpeta.
