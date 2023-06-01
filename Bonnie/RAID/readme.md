@@ -10,8 +10,8 @@ Este script de Python se utiliza para ejecutar comandos `bonnie++` en diferentes
 ## Uso
 
 1. Abre una terminal en el directorio donde se encuentra el script `bonnie_script.py`.
-2. Ejecuta el script utilizando el comando `python bonnie_script.py [s] [r]`, donde `[s]` y `[r]` son los tamaños de prueba deseados.
-   Por ejemplo: `python bonnie_script.py 8000 2000`
+2. Ejecuta el script utilizando el comando `sudo python3 bonnie_script.py [s] [r]`, donde `[s]` y `[r]` son los tamaños de prueba deseados.
+   Por ejemplo: `sudo python3 bonnie_script.py 8000 2000`
 3. El script ejecutará automáticamente los comandos `bonnie++` en los puntos de montaje especificados y guardará los resultados en un archivo llamado `resultados.txt`.
 4. Los resultados de cada ejecución se agregarán debajo de los resultados previos en `resultados.txt`, y se incluirá un título con la marca de tiempo para identificar cada ejecución.
 
