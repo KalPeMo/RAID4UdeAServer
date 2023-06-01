@@ -1,64 +1,68 @@
+
+
+==== Resultados - 2023-06-01 07:07:41 ====
+
 Comando: bonnie++ -d /mnt/md0 -u raid -s 8000 -r 2000 -b -n 0 -m raid
 Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
                     -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
 Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
-raid          8000M  787k  98  172m  15  114m   6 1524k  98  4.2g  99 552.5  13
-Latency             16148us     141us      82us   13698us      46us     133ms
+raid          8000M  790k  98  190m  17  114m   6 1507k  98  4.2g  99 543.6  13
+Latency             15476us      48us      76us   13714us      34us     116ms
 
-1.98,2.00,raid,1,1685741323,8000M,,8192,5,787,98,176341,15,116901,6,1524,98,4384002,99,552.5,13,,,,,,,,,,,,,,,,,,16148us,141us,82us,13698us,46us,133ms,,,,,,
+1.98,2.00,raid,1,1685760678,8000M,,8192,5,790,98,194398,17,116893,6,1507,98,4398802,99,543.6,13,,,,,,,,,,,,,,,,,,15476us,48us,76us,13714us,34us,116ms,,,,,,
 
 
 Comando: bonnie++ -d /mnt/md1 -u raid -s 8000 -r 2000 -b -n 0 -m raid
 Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
                     -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
 Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
-raid          8000M  768k  97  111m   8  113m   6 1433k  97  4.1g  99 432.1  10
-Latency             15671us     807us     211us   13830us      34us     277ms
+raid          8000M  759k  97  114m   8  113m   6 1672k  96  4.2g  99 404.3   9
+Latency             14081us     205ms     116us    5285us      46us     275ms
 
-1.98,2.00,raid,1,1685741207,8000M,,8192,5,768,97,113667,8,115462,6,1433,97,4294918,99,432.1,10,,,,,,,,,,,,,,,,,,15671us,807us,211us,13830us,34us,277ms,,,,,,
+1.98,2.00,raid,1,1685760990,8000M,,8192,5,759,97,117237,8,115796,6,1672,96,4441937,99,404.3,9,,,,,,,,,,,,,,,,,,14081us,205ms,116us,5285us,46us,275ms,,,,,,
 
 
 Comando: bonnie++ -d /mnt/md5 -u raid -s 8000 -r 2000 -b -n 0 -m raid
 Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
                     -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
 Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
-raid          8000M  778k  97  158m  20  155m  16 1414k  90  4.2g  99 378.4   9
-Latency             16152us   98873us     113us   92458us      36us     178ms
+raid          8000M  777k  97  159m  18  156m  15 1529k  96  4.2g  99 370.5   9
+Latency             15750us      78us      75us   13187us      54us     208ms
 
-1.98,2.00,raid,1,1685741082,8000M,,8192,5,778,97,161470,20,159030,16,1414,90,4383727,99,378.4,9,,,,,,,,,,,,,,,,,,16152us,98873us,113us,92458us,36us,178ms,,,,,,
-
-
+1.98,2.00,raid,1,1685760658,8000M,,8192,5,777,97,162873,18,159878,15,1529,96,4393795,99,370.5,9,,,,,,,,,,,,,,,,,,15750us,78us,75us,13187us,54us,208ms,,,,,,
 
 
-==== Resultados - 2023-06-01 06:37:59 ====
+
+
+==== Resultados - 2023-06-01 07:16:58 ====
 
 Comando: bonnie++ -d /mnt/md0 -u raid -s 4000 -r 2000 -b -n 0 -m raid
 Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
                     -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
 Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
-raid          4000M  794k  99  199m  18  109m   6 1668k  98  4.2g  99 631.7  11
-Latency             14469us      47us     148us   13667us      24us     125ms
+raid          4000M  792k  98  199m  18  116m   6 1665k  98  4.2g  99 652.1  12
+Latency             14343us      56us      92us   13660us      45us     133ms
 
-1.98,2.00,raid,1,1685758900,4000M,,8192,5,794,99,203544,18,111468,6,1668,98,4404281,99,631.7,11,,,,,,,,,,,,,,,,,,14469us,47us,148us,13667us,24us,125ms,,,,,,
+1.98,2.00,raid,1,1685760020,4000M,,8192,5,792,98,203559,18,118880,6,1665,98,4417581,99,652.1,12,,,,,,,,,,,,,,,,,,14343us,56us,92us,13660us,45us,133ms,,,,,,
 
 
 Comando: bonnie++ -d /mnt/md1 -u raid -s 4000 -r 2000 -b -n 0 -m raid
 Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
                     -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
 Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
-raid          4000M  782k  97  107m   7  111m   6 1511k  97  4.1g  99 378.4   7
-Latency             15599us      82us     140us   13634us      32us     211ms
+raid          4000M  774k  97  107m   7  112m   6 1458k  99  4.2g  99 412.3   8
+Latency             15683us      87us     229us   13794us      33us     207ms
 
-1.98,2.00,raid,1,1685758876,4000M,,8192,5,782,97,109618,7,113764,6,1511,97,4319900,99,378.4,7,,,,,,,,,,,,,,,,,,15599us,82us,140us,13634us,32us,211ms,,,,,,
+1.98,2.00,raid,1,1685760175,4000M,,8192,5,774,97,109394,7,114819,6,1458,99,4372699,99,412.3,8,,,,,,,,,,,,,,,,,,15683us,87us,229us,13794us,33us,207ms,,,,,,
 
 
 Comando: bonnie++ -d /mnt/md5 -u raid -s 4000 -r 2000 -b -n 0 -m raid
 Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
                     -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
 Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
-raid          4000M  780k  97  156m  19  156m  20 1581k  97  4.2g  99 407.1   7
-Latency             15496us      56us     115us    8014us      52us     182ms
+raid          4000M  779k  97  146m  19  156m  20 1669k  96  4.2g  99 393.8   7
+Latency             15646us     105us     187us    9026us      25us     183ms
 
-1.98,2.00,raid,1,1685758731,4000M,,8192,5,780,97,159698,19,159950,20,1581,97,4381732,99,407.1,7,,,,,,,,,,,,,,,,,,15496us,56us,115us,8014us,52us,182ms,,,,,,
+1.98,2.00,raid,1,1685760220,4000M,,8192,5,779,97,149852,19,159864,20,1669,96,4362607,99,393.8,7,,,,,,,,,,,,,,,,,,15646us,105us,187us,9026us,25us,183ms,,,,,,
 
 
