@@ -51,7 +51,7 @@ def run_experiment(file_size, chunk_size, replicas):
         sequential_write, sequential_read, time = get_dd_speed(command)
         timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-        write_to_csv(['DD',output_file,experiment_number, replica + 1, file_size_numeric, file_size_numeric, sequential_write, '0', '0', '0',
+        write_to_csv(['DD',output_file,experiment_number, replica + 1, file_size_numeric, chunk_size_numeric, sequential_write, '0', '0', '0',
                       time, timestamp, sequential_read])
 
         print(f"Prueba con file_size={file_size}, chunk_size={chunk_size}, Réplica {replica + 1} finalizada")
@@ -61,7 +61,7 @@ def run_experiment(file_size, chunk_size, replicas):
 file_sizes = ['1M', '4M', '16M', '32M', '64M', '1024M']
 chunk_sizes = ['4k', '8k', '16k']
 replicas = 5
-output_file = '/mnt/md1/archivo_salida'
+output_file = '/mnt/md0/archivo_salida'
 experiment_number = 1
 
 # Ejecutar el diseño experimental

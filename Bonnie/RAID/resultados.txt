@@ -66,3 +66,29 @@ Latency             15646us     105us     187us    9026us      25us     183ms
 1.98,2.00,raid,1,1685760220,4000M,,8192,5,779,97,149852,19,159864,20,1669,96,4362607,99,393.8,7,,,,,,,,,,,,,,,,,,15646us,105us,187us,9026us,25us,183ms,,,,,,
 
 
+
+
+==== Resultados - 2023-06-04 07:34:11 ====
+
+Comando: bonnie++ -d /mnt/md0 -u raid -s 500 -r 50 -b -n 0 -m raid
+
+
+Comando: bonnie++ -d /mnt/md1 -u raid -s 500 -r 50 -b -n 0 -m raid
+
+
+Comando: bonnie++ -d /mnt/md5 -u raid -s 500 -r 50 -b -n 0 -m raid
+
+
+
+
+==== Resultados - 2023-06-04 07:35:35 ====
+
+Comando: bonnie++ -d /mnt/md0 -u raid -s 1024 -r 4 -b -n 0 -m raid
+
+
+Comando: bonnie++ -d /mnt/md1 -u raid -s 1024 -r 4 -b -n 0 -m raid
+
+
+Comando: bonnie++ -d /mnt/md5 -u raid -s 1024 -r 4 -b -n 0 -m raid
+
+

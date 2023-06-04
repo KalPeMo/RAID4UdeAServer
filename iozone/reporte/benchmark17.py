@@ -32,7 +32,7 @@ def get_iozone_speed(command):
 # no se puede print(f"var30:{var30}")
 
 def write_to_csv(data):
-    with open('iozone_3replicas17.csv', 'a', newline='') as csvfile:
+    with open('iozone_3replicas17-1.csv', 'a', newline='') as csvfile:
         writer = csv.writer(csvfile)
         if not csvfile.tell():
             writer.writerow(['Benchmark', 'Disk', 'Test', 'Replica', 'file_size_in', 'reg_size_in', 'random_write(KB/s)', 'random_rewrite(KB/s)', 'random-reread', 'time', 'timestamp'])
@@ -79,7 +79,7 @@ experiment_number = 0
 if len(sys.argv) > 1:
     disk = sys.argv[1]
 else:
-    disk = "/dev/md5"  # Ruta por defecto si no se especifica en la línea de entrada 
+    disk = "/dev/md0"  # Ruta por defecto si no se especifica en la línea de entrada 
 
 #Ejecutar el diseño experimental
 for file_size in file_sizes:
