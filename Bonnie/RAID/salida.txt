@@ -1,0 +1,514 @@
+Resultados de las pruebas
+=====================
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 1024 KB
+Tamaño de chunk: 4 KB
+Réplica: 1
+Timestamp: 2023-06-04 11:05:22
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid             1G  711k  88 72.5m   6 90.7m   6 1573k  94 +++++ +++ 111.0   1
+Latency             16227us      92us     129us   13649us      45us     881ms
+
+1.98,2.00,raid,1,1685866484,1G,,8192,5,711,88,74247,6,92888,6,1573,94,+++++,+++,111.0,1,,,,,,,,,,,,,,,,,,16227us,92us,129us,13649us,45us,881ms,,,,,,
+
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 1024 KB
+Tamaño de chunk: 4 KB
+Réplica: 2
+Timestamp: 2023-06-04 11:07:02
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid             1G  666k  83 60.7m   6 90.3m   7 1610k  94 +++++ +++ 132.5   1
+Latency               135ms     122us     133us   13169us      20us     935ms
+
+1.98,2.00,raid,1,1685865670,1G,,8192,5,666,83,62149,6,92473,7,1610,94,+++++,+++,132.5,1,,,,,,,,,,,,,,,,,,135ms,122us,133us,13169us,20us,935ms,,,,,,
+
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 1024 KB
+Tamaño de chunk: 4 KB
+Réplica: 3
+Timestamp: 2023-06-04 11:09:00
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid             1G  658k  92 72.3m   7 72.3m   6 1389k  89 +++++ +++ 104.3   1
+Latency             18558us      56us     116us   13636us      29us     901ms
+
+1.98,2.00,raid,1,1685865485,1G,,8192,5,658,92,73987,7,74071,6,1389,89,+++++,+++,104.3,1,,,,,,,,,,,,,,,,,,18558us,56us,116us,13636us,29us,901ms,,,,,,
+
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 1024 KB
+Tamaño de chunk: 4 KB
+Réplica: 4
+Timestamp: 2023-06-04 11:10:41
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid             1G  724k  91 87.2m   8 88.9m   6 1270k  75 +++++ +++ 120.8   1
+Latency             14591us     114us     149us   13730us      30us     879ms
+
+1.98,2.00,raid,1,1685865482,1G,,8192,5,724,91,89319,8,91031,6,1270,75,+++++,+++,120.8,1,,,,,,,,,,,,,,,,,,14591us,114us,149us,13730us,30us,879ms,,,,,,
+
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 1024 KB
+Tamaño de chunk: 4 KB
+Réplica: 5
+Timestamp: 2023-06-04 11:12:48
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid             1G  639k  81  141m  12 56.7m   4 1338k  85 +++++ +++  90.1   1
+Latency               183ms     118us      56us   13588us      36us     944ms
+
+1.98,2.00,raid,1,1685865717,1G,,8192,5,639,81,144119,12,58067,4,1338,85,+++++,+++,90.1,1,,,,,,,,,,,,,,,,,,183ms,118us,56us,13588us,36us,944ms,,,,,,
+
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 1024 KB
+Tamaño de chunk: 8 KB
+Réplica: 1
+Timestamp: 2023-06-04 11:14:43
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid             1G  714k  90 63.0m   5 65.7m   5 1369k  87 +++++ +++ 112.1   1
+Latency             16461us      87us     123us   13571us      37us    1002ms
+
+1.98,2.00,raid,1,1685867432,1G,,8192,5,714,90,64464,5,67315,5,1369,87,+++++,+++,112.1,1,,,,,,,,,,,,,,,,,,16461us,87us,123us,13571us,37us,1002ms,,,,,,
+
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 1024 KB
+Tamaño de chunk: 8 KB
+Réplica: 2
+Timestamp: 2023-06-04 11:16:32
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid             1G  697k  87 70.7m   6 70.6m   6 1375k  87 +++++ +++ 115.8   1
+Latency             15960us     140us     408us   13597us      35us    1066ms
+
+1.98,2.00,raid,1,1685867608,1G,,8192,5,697,87,72368,6,72341,6,1375,87,+++++,+++,115.8,1,,,,,,,,,,,,,,,,,,15960us,140us,408us,13597us,35us,1066ms,,,,,,
+
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 1024 KB
+Tamaño de chunk: 8 KB
+Réplica: 3
+Timestamp: 2023-06-04 11:18:22
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid             1G  705k  88 71.0m   6 72.3m   5 1397k  82  1.8g  45 116.0   1
+Latency             16242us     100us     131us   13601us      36us     731ms
+
+1.98,2.00,raid,1,1685867602,1G,,8192,5,705,88,72673,6,73995,5,1397,82,1841593,45,116.0,1,,,,,,,,,,,,,,,,,,16242us,100us,131us,13601us,36us,731ms,,,,,,
+
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 1024 KB
+Tamaño de chunk: 8 KB
+Réplica: 4
+Timestamp: 2023-06-04 11:20:26
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid             1G  723k  91 96.9m   9 38.4m   3 1317k  85 +++++ +++ 106.5   1
+Latency             16216us      85us     223us   13813us      21us    1090ms
+
+1.98,2.00,raid,1,1685868016,1G,,8192,5,723,91,99259,9,39299,3,1317,85,+++++,+++,106.5,1,,,,,,,,,,,,,,,,,,16216us,85us,223us,13813us,21us,1090ms,,,,,,
+
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 1024 KB
+Tamaño de chunk: 8 KB
+Réplica: 5
+Timestamp: 2023-06-04 11:22:39
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid             1G  708k  90 65.2m   6 66.3m   5 1236k  79 +++++ +++  89.1   1
+Latency             16139us      92us     148us   13955us      28us    3413ms
+
+1.98,2.00,raid,1,1685867832,1G,,8192,5,708,90,66778,6,67852,5,1236,79,+++++,+++,89.1,1,,,,,,,,,,,,,,,,,,16139us,92us,148us,13955us,28us,3413ms,,,,,,
+
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 1024 KB
+Tamaño de chunk: 16 KB
+Réplica: 1
+Timestamp: 2023-06-04 11:24:36
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid             1G  690k  87 65.8m   6 68.1m   5 1469k  86  2.0g  50 107.6   1
+Latency             14682us     124us     136us   13617us      65us     990ms
+
+1.98,2.00,raid,1,1685868318,1G,,8192,5,690,87,67404,6,69756,5,1469,86,2055950,50,107.6,1,,,,,,,,,,,,,,,,,,14682us,124us,136us,13617us,65us,990ms,,,,,,
+
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 1024 KB
+Tamaño de chunk: 16 KB
+Réplica: 2
+Timestamp: 2023-06-04 11:25:38
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid             1G  625k  78 86.6m   8 98.4m   8 1338k  84 +++++ +++ 284.7   3
+Latency             15697us      80us     149us   13408us      36us     671ms
+
+1.98,2.00,raid,1,1685868306,1G,,8192,5,625,78,88703,8,100732,8,1338,84,+++++,+++,284.7,3,,,,,,,,,,,,,,,,,,15697us,80us,149us,13408us,36us,671ms,,,,,,
+
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 1024 KB
+Tamaño de chunk: 16 KB
+Réplica: 3
+Timestamp: 2023-06-04 11:26:17
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid             1G  769k  98  144m  12 88.2m   5 1681k  99 +++++ +++ 691.0   8
+Latency             16247us     311us     305us   13580us      61us     125ms
+
+1.98,2.00,raid,1,1685867684,1G,,8192,5,769,98,147827,12,90348,5,1681,99,+++++,+++,691.0,8,,,,,,,,,,,,,,,,,,16247us,311us,305us,13580us,61us,125ms,,,,,,
+
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 1024 KB
+Tamaño de chunk: 16 KB
+Réplica: 4
+Timestamp: 2023-06-04 11:26:59
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid             1G  773k  98  124m  11 88.1m   6 1523k  98 +++++ +++ 647.9   7
+Latency             16127us     304us     158us   13492us      69us     133ms
+
+1.98,2.00,raid,1,1685864739,1G,,8192,5,773,98,127482,11,90222,6,1523,98,+++++,+++,647.9,7,,,,,,,,,,,,,,,,,,16127us,304us,158us,13492us,69us,133ms,,,,,,
+
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 1024 KB
+Tamaño de chunk: 16 KB
+Réplica: 5
+Timestamp: 2023-06-04 11:27:35
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid             1G  764k  98  138m  12  136m  10 1487k  99 +++++ +++ 709.2   8
+Latency             16844us     212us     200us   13441us      93us     133ms
+
+1.98,2.00,raid,1,1685864660,1G,,8192,5,764,98,141524,12,139422,10,1487,99,+++++,+++,709.2,8,,,,,,,,,,,,,,,,,,16844us,212us,200us,13441us,93us,133ms,,,,,,
+
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 4096 KB
+Tamaño de chunk: 4 KB
+Réplica: 1
+Timestamp: 2023-06-04 11:29:13
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid             4G  765k  98  141m  12 87.2m   5 1674k  99  4.2g  99 661.8  10
+Latency             16224us     172us     190us   13622us      44us     139ms
+
+1.98,2.00,raid,1,1685866018,4G,,8192,5,765,98,143897,12,89307,5,1674,99,4391894,99,661.8,10,,,,,,,,,,,,,,,,,,16224us,172us,190us,13622us,44us,139ms,,,,,,
+
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 4096 KB
+Tamaño de chunk: 4 KB
+Réplica: 2
+Timestamp: 2023-06-04 11:30:41
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid             4G  779k  98  143m  12  106m   6 1497k  99  4.2g  99 770.1  13
+Latency             17099us     185us     144us   13736us      41us     116ms
+
+1.98,2.00,raid,1,1685865551,4G,,8192,5,779,98,146771,12,108227,6,1497,99,4397887,99,770.1,13,,,,,,,,,,,,,,,,,,17099us,185us,144us,13736us,41us,116ms,,,,,,
+
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 4096 KB
+Tamaño de chunk: 4 KB
+Réplica: 3
+Timestamp: 2023-06-04 11:32:19
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid             4G  772k  98  145m  12 87.0m   5 1489k  99  3.4g  99 640.8  12
+Latency             15534us     276us     365us    8692us      77us     141ms
+
+1.98,2.00,raid,1,1685962114,4G,,8192,5,772,98,148389,12,89102,5,1489,99,3588420,99,640.8,12,,,,,,,,,,,,,,,,,,15534us,276us,365us,8692us,77us,141ms,,,,,,
+
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 4096 KB
+Tamaño de chunk: 4 KB
+Réplica: 4
+Timestamp: 2023-06-04 11:33:53
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid             4G  735k  98  146m  12 94.8m   6 1519k  99  4.1g  99 665.3  11
+Latency             15635us     317us     301us    8567us     166us     124ms
+
+1.98,2.00,raid,1,1685960906,4G,,8192,5,735,98,149306,12,97098,6,1519,99,4276327,99,665.3,11,,,,,,,,,,,,,,,,,,15635us,317us,301us,8567us,166us,124ms,,,,,,
+
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 4096 KB
+Tamaño de chunk: 4 KB
+Réplica: 5
+Timestamp: 2023-06-04 11:35:27
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid             4G  733k  98  143m  12 95.5m   6 1527k  99  4.0g  99 667.0  11
+Latency             16210us     153us     146us    8590us      61us     133ms
+
+1.98,2.00,raid,1,1685961008,4G,,8192,5,733,98,146413,12,97773,6,1527,99,4241940,99,667.0,11,,,,,,,,,,,,,,,,,,16210us,153us,146us,8590us,61us,133ms,,,,,,
+
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 4096 KB
+Tamaño de chunk: 8 KB
+Réplica: 1
+Timestamp: 2023-06-04 11:37:06
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid             4G  783k  98  138m  12 87.0m   5 1676k  99  4.2g  99 657.8  11
+Latency             16293us     316us     211us    6934us      54us     135ms
+
+1.98,2.00,raid,1,1685961640,4G,,8192,5,783,98,141007,12,89070,5,1676,99,4416939,99,657.8,11,,,,,,,,,,,,,,,,,,16293us,316us,211us,6934us,54us,135ms,,,,,,
+
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 4096 KB
+Tamaño de chunk: 8 KB
+Réplica: 2
+Timestamp: 2023-06-04 11:38:44
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid             4G  782k  98  140m  12 87.8m   5 1473k  99  3.4g  99 667.3  11
+Latency             14700us     327us     134us   11964us      27us     125ms
+
+1.98,2.00,raid,1,1685960123,4G,,8192,5,782,98,143783,12,89885,5,1473,99,3532580,99,667.3,11,,,,,,,,,,,,,,,,,,14700us,327us,134us,11964us,27us,125ms,,,,,,
+
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 4096 KB
+Tamaño de chunk: 8 KB
+Réplica: 3
+Timestamp: 2023-06-04 11:40:19
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid             4G  745k  98  140m  12 97.3m   6 1515k  99  4.0g  99 642.9  11
+Latency             15645us     504us     195us    9171us      61us     125ms
+
+1.98,2.00,raid,1,1685960588,4G,,8192,5,745,98,143406,12,99627,6,1515,99,4231993,99,642.9,11,,,,,,,,,,,,,,,,,,15645us,504us,195us,9171us,61us,125ms,,,,,,
+
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 4096 KB
+Tamaño de chunk: 8 KB
+Réplica: 4
+Timestamp: 2023-06-04 11:41:54
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid             4G  740k  98  145m  12 94.0m   6 1518k  99  4.1g  99 636.9  11
+Latency             16690us     495us     211us    9180us      47us     133ms
+
+1.98,2.00,raid,1,1685960056,4G,,8192,5,740,98,148046,12,96227,6,1518,99,4260140,99,636.9,11,,,,,,,,,,,,,,,,,,16690us,495us,211us,9180us,47us,133ms,,,,,,
+
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 4096 KB
+Tamaño de chunk: 8 KB
+Réplica: 5
+Timestamp: 2023-06-04 11:43:26
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid             4G  751k  98  145m  12 99.3m   6 1622k  99  4.1g  99 670.3   7
+Latency             12295us     516us     327us    7879us      70us     125ms
+
+1.98,2.00,raid,1,1685959341,4G,,8192,5,751,98,148860,12,101716,6,1622,99,4263132,99,670.3,7,,,,,,,,,,,,,,,,,,12295us,516us,327us,7879us,70us,125ms,,,,,,
+
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 4096 KB
+Tamaño de chunk: 16 KB
+Réplica: 1
+Timestamp: 2023-06-04 11:45:19
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid             4G  604k  84 74.9m   6  117m   8 1485k  99  4.0g  99 654.4  11
+Latency             17064us      75us     336us   14012us      83us     125ms
+
+1.98,2.00,raid,1,1685959076,4G,,8192,5,604,84,76724,6,119900,8,1485,99,4241182,99,654.4,11,,,,,,,,,,,,,,,,,,17064us,75us,336us,14012us,83us,125ms,,,,,,
+
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 4096 KB
+Tamaño de chunk: 16 KB
+Réplica: 2
+Timestamp: 2023-06-04 11:46:51
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid             4G  745k  98  143m  12  101m   6 1527k  98  4.0g  99 643.2  12
+Latency             14779us     530us     259us    8708us      51us     116ms
+
+1.98,2.00,raid,1,1685958587,4G,,8192,5,745,98,146920,12,103068,6,1527,98,4233334,99,643.2,12,,,,,,,,,,,,,,,,,,14779us,530us,259us,8708us,51us,116ms,,,,,,
+
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 4096 KB
+Tamaño de chunk: 16 KB
+Réplica: 3
+Timestamp: 2023-06-04 11:48:26
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid             4G  747k  98  144m  11 95.3m   6 1595k  98  4.1g  99 615.4  10
+Latency             16154us     483us     149us    8570us      73us     133ms
+
+1.98,2.00,raid,1,1685958221,4G,,8192,5,747,98,147254,11,97588,6,1595,98,4273688,99,615.4,10,,,,,,,,,,,,,,,,,,16154us,483us,149us,8570us,73us,133ms,,,,,,
+
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 4096 KB
+Tamaño de chunk: 16 KB
+Réplica: 4
+Timestamp: 2023-06-04 11:49:52
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid             4G  746k  98  149m  12  114m   6 1355k  98  3.7g  99 655.3  10
+Latency             15614us     588us     296us   14400us      55us     117ms
+
+1.98,2.00,raid,1,1685967412,4G,,8192,5,746,98,152856,12,116662,6,1355,98,3865023,99,655.3,10,,,,,,,,,,,,,,,,,,15614us,588us,296us,14400us,55us,117ms,,,,,,
+
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 4096 KB
+Tamaño de chunk: 16 KB
+Réplica: 5
+Timestamp: 2023-06-04 11:51:22
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid             4G  741k  98  139m  12  107m   6 1579k  99  4.0g  99 750.2   6
+Latency             16386us     258us     298us    8912us      51us     141ms
+
+1.98,2.00,raid,1,1685967817,4G,,8192,5,741,98,142032,12,109264,6,1579,99,4202376,99,750.2,6,,,,,,,,,,,,,,,,,,16386us,258us,298us,8912us,51us,141ms,,,,,,
+
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 16384 KB
+Tamaño de chunk: 4 KB
+Réplica: 1
+Timestamp: 2023-06-04 11:56:33
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid            16G  592k  80  139m  12 98.6m   5 1517k  99  4.0g  99 608.5  20
+Latency             15783us    1389us   21129us    9404us      56us     141ms
+
+1.98,2.00,raid,1,1685968180,16G,,8192,5,592,80,142752,12,100976,5,1517,99,4157943,99,608.5,20,,,,,,,,,,,,,,,,,,15783us,1389us,21129us,9404us,56us,141ms,,,,,,
+
+
+=====================
+RAID: /mnt/md0
+Tamaño de archivo: 16384 KB
+Tamaño de chunk: 4 KB
+Réplica: 2
+Timestamp: 2023-06-04 12:01:36
+
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid            16G  745k  97  148m  12 99.6m   5 1586k  99  4.0g  99 583.1  19
+Latency             15926us   16114us     288us    8243us      74us     141ms
+
+1.98,2.00,raid,1,1685968852,16G,,8192,5,745,97,151239,12,102010,5,1586,99,4143323,99,583.1,19,,,,,,,,,,,,,,,,,,15926us,16114us,288us,8243us,74us,141ms,,,,,,
+

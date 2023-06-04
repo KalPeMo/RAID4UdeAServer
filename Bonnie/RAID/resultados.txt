@@ -92,3 +92,30 @@ Comando: bonnie++ -d /mnt/md1 -u raid -s 1024 -r 4 -b -n 0 -m raid
 Comando: bonnie++ -d /mnt/md5 -u raid -s 1024 -r 4 -b -n 0 -m raid
 
 
+
+
+==== Resultados - 2023-06-04 10:56:06 ====
+
+Comando: bonnie++ -d /mnt/md0 -u raid -s 16 -r 8 -b -n 0 -m raid
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid            16M  661k  86 +++++ +++ 28.3m   3 1427k  90 +++++ +++  96.0   1
+Latency             27401us     133us      99us   13451us      15us     743ms
+
+1.98,2.00,raid,1,1685871952,16M,,8192,5,661,86,+++++,+++,28932,3,1427,90,+++++,+++,96.0,1,,,,,,,,,,,,,,,,,,27401us,133us,99us,13451us,15us,743ms,,,,,,
+
+
+Comando: bonnie++ -d /mnt/md1 -u raid -s 16 -r 8 -b -n 0 -m raid
+Version  2.00       ------Sequential Output------ --Sequential Input- --Random-
+                    -Per Chr- --Block-- -Rewrite- -Per Chr- --Block-- --Seeks--
+Name:Size etc        /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP  /sec %CP
+raid            16M  760k  96 +++++ +++ +++++ +++ 1518k  97 +++++ +++ 848.3   9
+Latency             16659us     162us     104us   13527us      14us     125ms
+
+1.98,2.00,raid,1,1685871356,16M,,8192,5,760,96,+++++,+++,+++++,+++,1518,97,+++++,+++,848.3,9,,,,,,,,,,,,,,,,,,16659us,162us,104us,13527us,14us,125ms,,,,,,
+
+
+Comando: bonnie++ -d /mnt/md5 -u raid -s 16 -r 8 -b -n 0 -m raid
+
+
