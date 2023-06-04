@@ -32,7 +32,7 @@ def get_iozone_speed(command):
 # no se puede print(f"var30:{var30}")
 
 def write_to_csv(data):
-    with open('iozone_3replicas17-1.csv', 'a', newline='') as csvfile:
+    with open('reporteunificadoiozone.csv', 'a', newline='') as csvfile:
         writer = csv.writer(csvfile)
         if not csvfile.tell():
             writer.writerow(['Benchmark', 'Disk', 'Test', 'Replica', 'file_size_in', 'reg_size_in', 'random_write(KB/s)', 'random_rewrite(KB/s)', 'random-reread', 'time', 'timestamp'])
@@ -68,9 +68,9 @@ def run_experiment(file_size, record_size, chunk_size, replicas, experiment_numb
 
 
 # Definir los parámetros del diseño experimental
-file_sizes = [ '64k','4M','8M','16M','32M','64M','100M','500M','1G','2G','4G']
-record_sizes = ['1k','4k','8k','16k','32k','64k']
-replicas = 3
+file_sizes = [ '1M','4M','16M','32M','64M','1024M']
+record_sizes = ['4k','8k','16k']
+replicas = 5
 
 total_experiments = len(file_sizes) * len(record_sizes) * replicas
 experiment_number = 0
