@@ -34,7 +34,7 @@ def write_to_csv(data):
         writer = csv.writer(csvfile)
         if not csvfile.tell():
             writer.writerow(['Benchmark', 'Disk', 'Test', 'Replica', 'file_size_in', 'reg_size_in', 'write', 'rewrite', 'read', 'reread', 'random_reread', 'random_write(KB/s)', 'bkwd_read', 'record_rewrite', 'stride_read', 'fwrite', 'fread,freread', 'time', 'timestamp'])
-            #faltan metricas aqui, esta completo con el anterior 
+            # ok 
         writer.writerow(data)
 
 def get_time():

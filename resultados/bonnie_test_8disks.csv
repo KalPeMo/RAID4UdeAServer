@@ -1,0 +1,9 @@
+disk,block_size,amount_of_blocks,time_needed
+/dev/sda,1024M,1024,3.31
+/dev/sdb,1024M,1024,2.99
+/dev/sdc,1024M,1024,2.30
+/dev/sdd,1024M,1024,1.78
+/dev/sde,1024M,1024,1.85
+/dev/sdf,1024M,1024,1.85
+/dev/sdg,1024M,1024,2.39
+/dev/sdh,1024M,1024,1.79
